@@ -12,6 +12,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
+const port= process.env.PORT || 8080
+
 // Database connection
 main()
   .then(() => console.log('Connection successful'))
@@ -73,6 +75,6 @@ app.get('/', (req, res) => {
   res.send('Root is working');
 });
 
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log('App is listening on port 8080');
 });
