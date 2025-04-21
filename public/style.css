@@ -1,0 +1,137 @@
+/* Global dark background and text */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* dark background */
+  color: #e0e0e0; /* light text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Chat Heading - Dark but soft highlight */
+.chat-heading {
+  background-color: #1f1f1f; /* darker shade */
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Chat Card */
+.chat {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 2px 20px;
+  border-radius: 10px;
+  background-color: #2c2f38; /* soft dark gray */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  color: #e0e0e0; /* consistent text color */
+}
+
+/* Hover effect - no bright white, subtle */
+.chat:hover {
+  background-color: #383c44; /* slightly lighter than base */
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* From / To text */
+.chat-from,
+.chat-to {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #90a4ae; /* soft bluish-grey, no green */
+}
+
+.chat-from i,
+.chat-to i {
+  color: #607d8b; /* lighter greyish-blue */
+}
+
+/* Message bubble */
+.message {
+  background-color: #263238; /* darker background for message */
+  border: 1px solid #37474f;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  color: #d1ffd6; /* light greenish text */
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.05);
+}
+
+/* Timestamp style - lighter text */
+.text-muted {
+  font-size: 0.85rem;
+  color: #aaaaaa !important;
+}
+
+/* Icons color - kept light teal for visibility */
+.chat-from i,
+.chat-to i,
+.message i,
+.text-muted i {
+  margin-right: 5px;
+  color: #64ffda; /* light teal accent */
+  font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .chat {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .chat-heading {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .chat .card-body p,
+  .message {
+    font-size: 0.95rem;
+  }
+}
+.buttonc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .buttonc button{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buttonc button:hover{
+  background-color: #0056b3;
+} */
+ /* Light placeholder color for dark inputs */
+::placeholder {
+  color: #cccccc !important;
+  opacity: 1 ; /* Override default lower opacity */
+}
+
+/* Optional: Firefox specific */
+::-moz-placeholder {
+  color: #cccccc;
+  opacity: 1;
+}
+
+/* Optional: Internet Explorer */
+:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+/* Optional: Edge */
+::-ms-input-placeholder {
+  color: #cccccc;
+}
+button{
+  margin: 7px;
+}
